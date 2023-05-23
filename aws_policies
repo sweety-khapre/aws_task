@@ -1,0 +1,228 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:*",
+                "ec2:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "iam:GetLoginProfile"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "s3:*",
+                "iam:CreateUser",
+                "cloudwatch:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "iam:GetAccountAuthorizationDetails",
+                "iam:GetLoginProfile"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteGroup",
+                "iam:CreateGroup"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:GenerateCredentialReport",
+                "iam:ListGroupPolicies",
+                "iam:ListGroups",
+                "iam:GetLoginProfile"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListGroups",
+                "s3:ListBucket"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketPolicy",
+                "iam:ListGroups",
+                "iam:ListPolicies"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:CreateBucket"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketPolicy"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketNotification",
+                "iam:ListInstanceProfiles",
+                "iam:ListRoles",
+                "iam:ListRolePolicies"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "sso-directory:AddMemberToGroup",
+                "sso-directory:ListGroupsForUser",
+                "sso-directory:CreateGroup",
+                "sso-directory:UpdateGroup"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
